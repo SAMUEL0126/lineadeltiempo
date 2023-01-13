@@ -13,7 +13,7 @@ video {
 .loader {
     background: red;
     width: 300px;
-    height: 60px;
+    height: 30px;
     overflow: hidden;
     display: flex;
     animation: carga2 4s infinite;
@@ -34,7 +34,7 @@ video {
     font-size: 22px;
     margin: auto;
     position: absolute;
-    margin-top: 15px;
+    margin-top: 2px;
     animation: lbl-carga 4s infinite;
     margin-left: 70px;
 }
