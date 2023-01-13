@@ -16,6 +16,8 @@ video {
     height: 60px;
     overflow: hidden;
     display: flex;
+    animation: carga2 4s infinite;
+   
 }
 
 .loader:before {
@@ -24,6 +26,7 @@ video {
     height: 100vh;
     background: blue;
     animation: carga 4s infinite;
+    
 }
 
 .lbl-loader {
@@ -32,6 +35,8 @@ video {
     margin: auto;
     position: absolute;
     margin-top: 15px;
+    animation: lbl-carga 4s infinite;
+    margin-left: 100px;
 }
 
 
@@ -65,15 +70,51 @@ h1 {
         background: yellow;
     }
     40%{
-        background: white; color: black;
+        background: white;
     }
     60%{
         background: green;
     }
     80%{
-        background: purple; color: white;
+        background: purple;
     }
     100%{
         background: black;
     }
+}
+
+@keyframes lbl-carga {
+    0%{
+        color: white;
+    }
+    40%{
+        color: black;
+    }
+    60%{
+        color: white;
+    }
+    80%{
+        color: black;
+    }
+    100%{
+        color: white;
+    }
+}
+
+@keyframes carga2 {
+    0%{
+        box-shadow: 0px 0px 20px 0px blue;
+    }
+    40%{
+        box-shadow: 0px 0px 20px 0px red;
+    }
+    60%{
+        box-shadow: 0px 0px 20px 0px white;
+    }
+    80%{
+        box-shadow: 0px 0px 20px 0px blue;
+    }
+    100%{
+        box-shadow: 0px 0px 20px 0px green;
+    }  
 }
