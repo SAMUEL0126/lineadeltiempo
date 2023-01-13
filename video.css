@@ -7,7 +7,6 @@
 
 header {
     width: 100%;
-    height: auto;
     position: relative;
 }
 
@@ -15,11 +14,10 @@ video {
     width: 100%;
 }
 
+
 .absolute {
     width: 100%;
     height: 100%;
-    top: 0;
-    right: 0;
     position: absolute;
     text-align: center;
     display: flex;
@@ -29,10 +27,9 @@ video {
 
 h1 {
     font-size: 80px;
-    font-weight: 900;
-    z-index: 100;
-    color: #fff;
-    margin-bottom: 30px;
+    margin-bottom: 100px;
+    color: orange;
+    text-shadow: 10px 10px 4px black;
 }
 
 h1::after {
@@ -41,12 +38,6 @@ h1::after {
     height: 10px;
     content: "";
     margin: auto;
-    background: #fff;
+    background: orange;
+    filter: drop-shadow(10px 10px 4px black);
 }
-.overlay {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    background: rgba(0,0,0,0.575);
-}
-
