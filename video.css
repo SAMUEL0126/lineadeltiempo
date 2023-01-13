@@ -17,7 +17,7 @@ video {
     overflow: hidden;
     display: flex;
     animation: carga2 4s infinite;
-   
+    border-radius: 50px;
 }
 
 .loader:before {
@@ -36,7 +36,7 @@ video {
     position: absolute;
     margin-top: 15px;
     animation: lbl-carga 4s infinite;
-    margin-left: 100px;
+    margin-left: 70px;
 }
 
 
