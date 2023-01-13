@@ -1,0 +1,182 @@
+
+  .slect_day{
+      transform: translate(100px, 70px);
+  }
+
+  button {
+    background-color: transparent;
+    outline: none;
+    border: none;
+    font-size: 2em;
+    cursor: pointer;
+  }
+  .lists__pokemons {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
+    gap: 2em;
+    padding: 1em;
+    text-align: center;
+  }
+  .pokemon__img {
+    border: 1px solid #ccc;
+    width: 100%;
+    border-radius: 3px;
+    margin-top: 8em;
+    color: #fff;
+    padding: 0.5em;
+  }
+  .pokemon__img img {
+    height: 200px;
+    width: 100%;
+    margin-top: -5em;
+  }
+  .buttons {
+    display: flex;
+    justify-content: center;
+    width: 200px;
+    margin: 2em auto 2em;
+  }
+
+  * {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    background-color: black;
+    font-family: 'Amatic SC';
+  }
+  
+  a {
+    text-decoration: none;
+  }
+
+  .btn{
+    color: white;
+  }
+  
+  .contenedor {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    padding: 40px 0;
+  }
+  
+  .selectbox {
+    width: 50%;
+    margin: auto;
+    position: relative;
+  }
+  
+  .select {
+    background: #fff;
+    width: 100%;
+    box-shadow: 0px 0px 0px rgba(0, 0, 0, .16);
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: .2s ease all;
+    margin-bottom: 30px;
+    padding: 30px;
+    position: relative;
+    z-index: 200;
+    border: 2px solid transparent;
+  }
+  
+  .select.active,
+  .select:hover {
+    box-shadow: 0px 5px 10px rgba(0, 0, 0, .16);
+    border: 2px solid #213f8f;
+  }
+  
+  .select.active:before {
+    content: "";
+    display: block;
+    height: 0;
+    width: 0;
+    border-top: 15px solid #213f8f;
+    border-right: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    position: absolute;
+    bottom: -30px;
+    left: calc(50% - 15px);
+  }
+  
+  .select i {
+    font-size: 30px;
+    margin-left: 30px;
+    color: #213f8f;
+  }
+  
+  .titulo {
+    margin-bottom: 10px;
+    color: #000;
+    font-weight: 600;
+    font-size: 30px;
+  }
+  
+  .descripcion {
+    font-size: 18px;
+    color: #434343;
+  }
+  
+  .opciones {
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,.16);
+    max-height: 400px;
+    overflow: auto;
+    z-index: 100;
+    width: 100%;
+    display: none;
+  }
+  
+  .opciones.active {
+    display: block;
+    animation: fadeIn .3s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      transform: translateY(-200px) scale(.5);
+    }
+    to {
+      transform: translateY(0) scale(1);
+    }
+  }
+  
+  .contenido-opcion {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    transition: .2s ease all;
+  }
+  
+  .opciones .contenido-opcion {
+    padding: 30px;
+  }
+  
+  .contenido-opcion img {
+    width: 60px;
+    height: 60px;
+    margin-right: 30px;
+  }
+  
+  .opciones .contenido-opcion:hover {
+    background: #213F8F;
+  }
+  
+  .opciones .contenido-opcion:hover .titulo,
+  .opciones .contenido-opcion:hover .descripcion {
+    color: #fff;
+  }
+  
+  @media screen and (max-width: 800px){
+    .selectbox {
+      width: 100%;
+    }
+  }
